@@ -1,0 +1,165 @@
+/* Basic styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Container for each section */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+/* Owner, Co-Owner, GC Owner Section */
+.owner, .co-owner, .gc-owner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.owner:hover, .co-owner:hover, .gc-owner:hover {
+  transform: scale(1.05);
+}
+
+/* Image Styling */
+.owner img, .co-owner img, .gc-owner img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Buttons */
+.contact-btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: linear-gradient(to right, #f39c12, #e67e22);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: linear-gradient(to right, #e67e22, #f39c12);
+}
+
+/* GC Rules Section */
+.gc-rules {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gc-rules h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.gc-rules ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.gc-rules li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Styling for the Quick Links */
+.quick-links {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.quick-links a {
+  padding: 12px 30px;
+  margin: 10px;
+  background: linear-gradient(to right, #3498db, #2980b9);
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quick-links a:hover {
+  background: linear-gradient(to right, #2980b9, #3498db);
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .owner, .co-owner, .gc-owner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .owner img, .co-owner img, .gc-owner img {
+    margin-bottom: 15px;
+  }
+
+  .contact-btn {
+    margin-top: 10px;
+  }
+
+  .gc-rules h2 {
+    font-size: 1.5rem;
+  }
+
+  .gc-rules li {
+    font-size: 0.9rem;
+  }
+
+  .quick-links a {
+    padding: 10px 20px;
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
