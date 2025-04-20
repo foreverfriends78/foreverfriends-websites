@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
 /* Container for each section */
@@ -38,7 +38,7 @@ body {
   color: #ddd;
 }
 
-/* Owner, Co-Owner, GC Owner Section */
+/* Owner Sections */
 .owner, .co-owner, .gc-owner {
   display: flex;
   align-items: center;
@@ -56,7 +56,7 @@ body {
 }
 
 /* Image Styling */
-.owner img, .co-owner img, .gc-owner img {
+.owner img, .co-owner img, .gc-owner img, .friend img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -110,7 +110,7 @@ body {
   margin: 10px 0;
 }
 
-/* Styling for the Quick Links */
+/* Quick Links */
 .quick-links {
   text-align: center;
   margin-top: 40px;
@@ -131,7 +131,33 @@ body {
   background: linear-gradient(to right, #2980b9, #3498db);
 }
 
-/* Responsive Design for Small Screens */
+/* Friends Section */
+.friend {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 300px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.friend:hover {
+  transform: scale(1.05);
+}
+
+.friend h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.friend p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .owner, .co-owner, .gc-owner {
     flex-direction: column;
@@ -156,6 +182,10 @@ body {
 
   .quick-links a {
     padding: 10px 20px;
+  }
+
+  .friend {
+    max-width: 90%;
   }
 }
 
