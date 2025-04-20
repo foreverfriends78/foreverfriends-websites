@@ -131,16 +131,33 @@ body {
   background: linear-gradient(to right, #2980b9, #3498db);
 }
 
-/* Friends Section */
 .friend {
   text-align: center;
-  margin: 40px auto;
-  padding: 40px;
-  max-width: 300px;
-  background: rgba(0, 0, 0, 0.6);
+  margin: 30px auto; /* Increased margin for more spacing */
+  padding: 25px;
+  max-width: 280px;
+  background: rgba(0, 0, 0, 0.65);
   border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 1s ease;
+}
+
+.friend:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.friend h3 {
+  margin-top: 12px;
+  font-size: 1.3rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.friend p {
+  font-size: 1rem;
+  color: #ddd;
 }
 
 .friend:hover {
@@ -192,4 +209,14 @@ body {
 /* Smooth Scroll */
 html {
   scroll-behavior: smooth;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
