@@ -44,9 +44,9 @@ body {
   align-items: center;
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.5);
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 10px;
+  margin: 40px 0;
+  padding: 40px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
@@ -86,8 +86,8 @@ body {
 .gc-rules {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
+  padding: 40px;
+  margin: 40px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -134,11 +134,11 @@ body {
 /* Friends Section */
 .friend {
   text-align: center;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 40px auto;
+  padding: 40px;
   max-width: 300px;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
